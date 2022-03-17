@@ -26,10 +26,11 @@ def criar_conta_nova():
 
 
     with open("contas.txt", "a") as contas:
+        conta = conta_nova()
         contas.write("\n")
         contas.write(conta)
     return conta
 
 
-#conta = criar_conta_nova()
-#print(conta)
+conta = criar_conta_nova()
+print(conta)
